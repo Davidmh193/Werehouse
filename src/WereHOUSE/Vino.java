@@ -1,6 +1,6 @@
 package WereHOUSE;
 
-public class Vino {
+public class Vino implements Alcoholico{
 
 	private String color;
 	private String origen;
@@ -37,5 +37,15 @@ public class Vino {
 	}
 	public void setGradosAlcohol(double gradosAlcohol) {
 		this.gradosAlcohol = gradosAlcohol;
+	}
+	@Override
+	public boolean esFuerte() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	@Override
+	public double calcularTasa() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 }

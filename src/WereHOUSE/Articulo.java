@@ -1,5 +1,7 @@
 package WereHOUSE;
 
+import javax.swing.JOptionPane;
+
 public abstract class Articulo {
 	private String code;
 	private String name;
@@ -7,6 +9,7 @@ public abstract class Articulo {
 	private int capacidadBotella;
 	private double precio;
 	private int stock;
+	
 	
 	
 	public String getCode() {
@@ -45,15 +48,25 @@ public abstract class Articulo {
 	public void setStock(int stock) {
 		this.stock = stock;
 	}
-	public void incrementarStock(String[] args){
+	public void incrementarStock(int intStock){
+	
+	}
+	
+	public void DisminuirStock(int cantidad){
+		
+	}
+	public void visualizarArticulo(){
+		JOptionPane.showMessageDialog(null, "");
+		
+	}
+	public boolean esSaludable(){
+		boolean esSaludable1 =false;
+		
+		return esSaludable1;
+	}
+	
+	public void preciototal() {
 		
 	}
 	
-	public void DisminuirStock(String[] args){
-		
-	}
-	public void visualizarArticulo(String[] args){
-		
-	}
-
 }

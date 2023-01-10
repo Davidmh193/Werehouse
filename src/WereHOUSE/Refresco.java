@@ -7,11 +7,7 @@ public class Refresco {
 	private boolean gaseoso;
 	private int cantidadAzucar;
 	
-	public boolean esSaludable(){
-		boolean esSaludable1 =false;
-		
-		return esSaludable1;
-	}
+
 	public String getSabor() {
 		return sabor;
 	}
@@ -35,9 +31,5 @@ public class Refresco {
 	}
 	public void setCantidadAzucar(int cantidadAzucar) {
 		this.cantidadAzucar = cantidadAzucar;
-	}
-	
-	public void visualizarPropiedades(String[] args){
-		
 	}
 }

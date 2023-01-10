@@ -3,7 +3,7 @@ package WereHOUSE;
 import java.util.ArrayList;
 
 public class Almacen {
-	public void cargarDatos(String[] args) {
+	public void cargarDatos() {
 
 	}
 
@@ -19,15 +19,31 @@ public class Almacen {
 	public boolean hayStock(String codigoProducto) {
 		return false;
 	}
-	public ArrayList stockJusto() {
-		ArrayList x = new ArrayList();
-		return x;
+	public ArrayList<Articulo> stockJusto() {
+		ArrayList<Articulo> stockJusto= new ArrayList();
+		for (Articulo articulo : stockJusto) {
+		
+			
+		}
+		return stockJusto;
+		
 	}
-	
-	public Articulo articulo() {
+	public Articulo articulo(String codigoProducto) {
 		Articulo x =null;
 		
-		return x;
+		return x;	
+	}
+	public boolean disponibilidad(int cantidad, String codigoProducto ) {
+		return false;
+	}
+	public ArrayList<Articulo> equivalentes( Articulo articulo) {
+		return null;
+	}
+	public ArrayList<Articulo> ordenarPorPrecio(String orden ) {
+	ArrayList y = new ArrayList();
+	return y;
+	}
+	public void ordenarPorStock(String orden ) {
 		
 	}
 }

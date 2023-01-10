@@ -9,9 +9,9 @@ public class GestorAlmacenApp {
 
 	public class Main {
 		public static void main(String[] args) throws HeadlessException, ParseException {
-			GestorAlmacenApp run = run GestorAlmacenApp();
-			run.run();
+			GestorAlmacenApp gf = run GestorAlmacenApp();
+			gf.run();
 		}
 	}
-
+	
 }
