@@ -3,7 +3,6 @@ package WereHOUSE;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.Scanner;
 
 
@@ -17,7 +16,7 @@ public class Almacen {
 		Scanner scan=new Scanner(file);
 		
 		while(scan.hasNextLine()) {
-			partes=scan.nextLine().split(";");
+			partes=scan.nextLine().split(":");
 			
 			if(partes[2].toLowerCase().equals("refresco"))
 			Refresco refresco=new Refresco(partes[0], partes[1], partes[2], partes[3],Integer.parseInt(partes[4]), Double.parseDouble(partes[5]), Integer.parseInt(partes[6]), partes[7], zumo, gaseoso,Integer.parseInt(partes[10]));
@@ -30,9 +29,10 @@ public class Almacen {
 				Cerveza cerveza=new Cerveza(partes[0], partes[1], partes[2], partes[3],Integer.parseInt(partes[4]), Double.parseDouble(partes[5]), Integer.parseInt(partes[6]), partes[7], partes[8], Double.parseDouble(partes[9]));
 				articuloList.add(cerveza);
 			
+			scan.close();
 			}
-		}scan.close();
 	}
+
 
 	
 	public Articulo elMasCaro() {
@@ -82,8 +82,8 @@ public class Almacen {
 		ArticuloComparadorStock comparador=new ArticuloComparadorStock();
 		articuloList.sort(comparador);
 	}
-}
+
 
 }
-}
+
 
