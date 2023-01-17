@@ -19,7 +19,7 @@ public class Almacen {
 			partes=scan.nextLine().split(":");
 			
 			if(partes[2].toLowerCase().equals("refresco"))
-			Refresco refresco=new Refresco(partes[0], partes[1], partes[2], partes[3],Integer.parseInt(partes[4]), Double.parseDouble(partes[5]), Integer.parseInt(partes[6]), partes[7], zumo, gaseoso,Integer.parseInt(partes[10]));
+			Refresco refresco=new Refresco(partes[0], partes[1], partes[2], partes[3],Integer.parseInt(partes[4]), Double.parseDouble(partes[5]), Integer.parseInt(partes[6]), partes[7], Boleaparte[7]zumo, gaseoso,Integer.parseInt(partes[10]));
 				articuloLista.add(refresco);
 				
 			}else if(partes[0].toLowerCase().equals("vino")) {

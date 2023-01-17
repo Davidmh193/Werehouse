@@ -1,0 +1,6 @@
+refresco:1:kaslimon:kas:2:2:30:limon:true:ture:17
+refresco:2:cocacola:cocacolaexperience:1:1.5:14:cocacola:false:true:25
+vino:3:chardonnayelite:chardonnay:1:25:12:blanco:navarra:2019:blanca:10
+vino:4:donsimon:donsimon:1.5:1.6:20:tinto:andalucia:2022Garnacha:15
+cerveza:5:radler:Sanmiguel:33:1:15:españa:3
+cerveza:6:litrona:mahou:1:2:13:belgica:9

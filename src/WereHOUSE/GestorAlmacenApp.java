@@ -9,13 +9,7 @@ public class GestorAlmacenApp {
 
 
 	public void run() throws FileNotFoundException {
-		int f = 0;
-		int menu = 0;
-		boolean Dnilogin = false;
-		int retirado;
 		boolean guardado = false;
-		int introducir;
-		String datos;
 		String sino;
 		
 		final int OPCION_UNO = 1;
@@ -25,6 +19,11 @@ public class GestorAlmacenApp {
 		final int OPCION_CUATRO=4;
 		final int OPCION_CINCO=5;
 		int opcion_menu;
+		
+		
+		JOptionPane.showInputDialog(null, "");
+		
+		
 		do {
 			opcion_menu = Integer.parseInt(JOptionPane.showInputDialog(null,
 					"------MENU-------\n" + OPCION_UNO + ". primera opcion\n" + OPCION_DOS + ". segunda opcion\n"
